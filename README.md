@@ -1,0 +1,1 @@
+This is my first time creating a webpage using Git, Github, the command line, and a full understanding (more or less) of CSS. I'm excited to try this out, and let's see how it goes. 
