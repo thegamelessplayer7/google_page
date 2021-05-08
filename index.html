@@ -223,14 +223,36 @@
                 background-color: transparent;
                 border: none;
                 margin: 0;
+                padding: 0;
+                color: rgba(0,0,0,.87)
+                word-wrap: break-word;
+                outline: none;
                 display: flex;
+                flex-direction: row;
+                flex-wrap: no-wrap;
+                align-content: normal;
+                justify-content: normal;
+                align-items: normal;
                 flex: 100%;
+                font-size: 16px;
 
-                
-              
 
 
             }
+            input {
+                -webkit-writing-mode: horizontal-tb !important;
+                text-rendering: auto;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                font: 400 13.3333px Arial;
+                border-width: 2px;
+                border-style: inset;
+                
+            }
+
+
             form {
                 display: block;
                 margin-top: 0em;
