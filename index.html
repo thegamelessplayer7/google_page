@@ -214,9 +214,10 @@
                 z-index: 3;
                 height: 34px;  /*this controls the height of inside bar*/
                 flex: 1;
-                padding: 5px 8px 0 16px;
+                padding: 2px 8px 5 16px; /*this controls height too*/
                 padding-left: 14px;
                 margin-top: -10px;
+               margin-left: -30px;
             }
 
             .search-area {
@@ -285,7 +286,7 @@
                 margin-top: 3px;
                 color: #9aa0a6;
                 height: 20px;
-                width: 20px;
+                width: 50px;
                 display: inline-block;
                 fill: currentColor;
                 line-height: 24px;
@@ -300,7 +301,7 @@
                 display: flex;
                 align-items: center;
                 padding-right: 13px;
-                margin-top: -10px;
+                margin-top: -17px;
 
             }
             .button-a {
@@ -346,14 +347,15 @@
                 max-width: 584px;
                 position: relative;
                 margin: 0 auto;
-                padding-top: 6px;
+                padding-top: 10px; /*This made the top of the border show up*/
+                padding-right: 2px; /*This made the right of the border show up*/
                 display: flex;
 
             }
 
             .widen-search-bar-2 {
                 width: auto;
-                max-width: 584px;
+                max-width: 584px; /*This controls width of the entire search bar*/
                 background: #fff;
                 display: flex;
                 border: 1px solid #dfe1e5; /*this is the border around the search field*/
@@ -366,6 +368,44 @@
                 
             }
 
+
+            .global-citizen-section {
+                flex-grow: 1;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                display: block;
+            }
+            .global-citizen-line {
+                text-align: center;
+                display: block;
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                color: #222;
+                font-size: small;
+                margin-bottom: 32px;
+                display: block;
+                text-align: center;
+            }
+            .play-button {
+                border: none;
+                margin-right: 5px;
+                vertical-align: middle;
+                height: 42px;
+                aspect-ratio: auto 42 / 42;
+                width: 42px;
+                font-size: small;
+                margin-bottom: 32px;
+                
+            }
+            .global-citizen {
+                color: #1a0dab;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: small;
+                text-align: center;
+                font-fammily: arial, sans-serif;
+
+            }
         
         </style>
         <title>Google</title>
@@ -422,8 +462,8 @@
     </div>
     <center>
         <input class="button-a" value="Google Search" aria-label="Google Search" type="submit">
-        <button class="button-a">Google Search</button>
-        <button class="button-b">I'm Feeling Lucky</button>
+        <input class="button-a" value="I'm Feeling Lucky" aria-label="Google Search" type="submit">
+  
     </center>
     <div id="aapi">
         <p><a class="aapia" href="https://www.google.com/url?q=https://www.blog.google/outreach-initiatives/diversity/apahm-2021&source=hpp&id=19024164&ct=3&usg=AFQjCNEH06ue72b2al-ICpexs5u5A0FSvw&sa=X&ved=0ahUKEwjuzKKS3rDwAhUD26wKHYKqAg8Q8IcBCBE"><Our commitments to Asian and Pacific Islander communities to help #StopAsianHate</a></p>
@@ -431,6 +471,28 @@
 
 
 </div>
+
+
+<div class="global-citizen-section">
+    <div class="global-citizen-line">
+        <img class="play-button" height="42" src="https://www.google.com/images/hpp/YT_RedPlayButton_Icon_48x48.png" width="42">
+        <a class="global-citizen" href="#" rel="nofollow">Watch the Global Citizen benefit</a>
+        <span>to support vaccine distribution</span>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
     </body>
 
     <footer>
