@@ -58,7 +58,7 @@
 
             }
 
-
+/*trying to see what happens if I remove these settings
             .left-footer {
                 margin-left: 15px;
                 padding: 15px;
@@ -98,6 +98,7 @@
                 color: #222;
 
             }
+            */
 
 
 
@@ -374,6 +375,7 @@
                 flex-shrink: 0;
                 box-sizing: border-box;
                 display: block;
+            
             }
             .global-citizen-line {
                 text-align: center;
@@ -385,6 +387,8 @@
                 margin-bottom: 32px;
                 display: block;
                 text-align: center;
+                letter-spacing: 0px;
+                
             }
             .play-button {
                 border: none;
@@ -394,7 +398,7 @@
                 aspect-ratio: auto 42 / 42;
                 width: 42px;
                 font-size: small;
-                margin-bottom: 32px;
+                margin-bottom: 5px; /*this moved the text line to the middle of the play button*/
                 
             }
             .global-citizen {
@@ -403,10 +407,45 @@
                 cursor: pointer;
                 font-size: small;
                 text-align: center;
-                font-fammily: arial, sans-serif;
-
+                font-family: arial, sans-serif;
+                cursor: pointer;
             }
+            .footer-background {
+                background: #f2f2f2;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                display: block;
+            }
+        .bottom-section {
+            justify-content: space-eenly;
+            display: flx;
+            flex-wrap: wrap;
         
+            padding: 0 20px;
+
+        }
+        .left-section-of-footer {
+            justify-content: flex-start;
+            min-width: 30%;
+            order: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bottom-a {
+            color: #70757a;
+            display: block;
+            padding: 15px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .new-div-footer-right {
+            justify-content: flex-end;
+            min-width: 30%;
+            order: 3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
         </style>
         <title>Google</title>
 
@@ -476,7 +515,7 @@
 <div class="global-citizen-section">
     <div class="global-citizen-line">
         <img class="play-button" height="42" src="https://www.google.com/images/hpp/YT_RedPlayButton_Icon_48x48.png" width="42">
-        <a class="global-citizen" href="#" rel="nofollow">Watch the Global Citizen benefit</a>
+        <a class="global-citizen" href="https://www.google.com/url?q=https://www.youtube.com/watch%3Fv%3DC02GCe5_bDk&source=hpp&id=19024321&ct=3&usg=AFQjCNFZabtDB-s_ogTxKbuFITs3v67X8Q&sa=X&ved=0ahUKEwi1lZiV-rrwAhVFgK0KHX-zAHYQ8IcBCA8" rel="nofollow">Watch the Global Citizen benefit concert</a>
         <span>to support vaccine distribution</span>
 
 
@@ -495,26 +534,29 @@
 
     </body>
 
-    <footer>
+    <footer class="footer-background">
         <center>
-            <li><a class="left-footer" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a></p>
-            <div class="div-footer">
-        <ul>
         
-        <li><a class="left-footer" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQkdQCCBI&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a></li>
-        <li><a class="left-footer" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQktQCCBM&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a></li>
-        <li><a class="left-footer" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
-        </ul>
+            <div class="bottom-section">
+            <a class="bottom-a" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a></p>
+            <div class="div-footer">
+       <div class="left-section-of-footer">
+                <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQkdQCCBI&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a>
+        <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQktQCCBM&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+        <a class="bottom-a" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
+       </div>
     </div>
 
 
-<div class="div-footer-right"
-        <li><a class="right-footer" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a></li>
-        <li><a class="right-footer" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a></li>
-        <li class="right-footer">Settings</li>
-        </ul>
+<div class="new-div-footer-right"
+        <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a>
+        <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a>
+        <a class="bottom-a" href="#">Settings</a>
+        
     </div>
-    </center>
+</div>
+</center>
+   
     
     
     
