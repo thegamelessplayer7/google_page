@@ -49,14 +49,7 @@
 
             }
 
-            .div-footer {
-                justify-content: flex-start;
-                min-width: 30%;
-                display: flex;
-                flex-wrap: wrap;
-                order: 1;
-
-            }
+          
 
 /*trying to see what happens if I remove these settings
             .left-footer {
@@ -410,42 +403,77 @@
                 font-family: arial, sans-serif;
                 cursor: pointer;
             }
-            .footer-background {
+           
+            .footer-overall {
                 background: #f2f2f2;
                 flex-shrink: 0;
                 box-sizing: border-box;
-                display: block;
+                font-size: 14px;
+                font-family: arial, sans-serif;
+                color: #222;
             }
-        .bottom-section {
-            justify-content: space-eenly;
-            display: flx;
-            flex-wrap: wrap;
-        
-            padding: 0 20px;
+            
+            .footer-just-inside {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 20px;
 
-        }
-        .left-section-of-footer {
-            justify-content: flex-start;
-            min-width: 30%;
-            order: 1;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .bottom-a {
-            color: #70757a;
-            display: block;
-            padding: 15px;
-            white-space: nowrap;
-            text-decoration: none;
-        }
-        .new-div-footer-right {
-            justify-content: flex-end;
-            min-width: 30%;
-            order: 3;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+            }
+            
+            .left-footer {
+                justify-content: flex-start;
+                min-width: 30%;
+                order: 1;
+                display: flex;
+                flex-wrap: wrap;
+                
+            }
+            .left-footer-contents {
+                color: #70757a;
+                display: block;
+                padding: 15px;
+                white-space: nowrap;
+                text-decoration: none;
+            }
+            .middle-footer {
+                order: 2;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+            }
+            .middle-footer-content {
+                color: #70757a;
+                display: block;
+                padding: 15px;
+                white-space: nowrap;
+                text-decoration: none;
+            }
+            .middle-footer-image {
+                height: 14px;
+                margin-right: 6px;
+            }
+            .middle-footer-internal {
+                white-space: nowrap;
+                vertical-align: top;
+            }
+            .right-footer {
+                justify-content: flex-end;
+                min-width: 30%;
+                order: 3;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .right-footer-contents {
+                color: #70757a;
+                display: block;
+                padding: 15px;
+                white-space: nowrap;
+                text-decoration: none;
+                
+            }
+    
         </style>
         <title>Google</title>
 
@@ -534,34 +562,40 @@
 
     </body>
 
-    <footer class="footer-background">
+    <div class="footer-overall">
+        <div class="footer-just-inside">
+            <div class="left-footer">
+                <a class="left-footer-contents" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="left-footer-contents" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+                <a class="left-footer-contents" href="https://google.com/search/howsearchworks/?fg=1">How search works</a>
+            </div>
+
+            <div class="middle-footer">
+                <a class="middle-footer-content" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">
+                    <img class="middle-footer-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
+                    <span class="middle-footer-internal">Carbon neutral since 2006</span>
+                
+                
+                </a>
+
+
+            </div>
+            <div class="right-footer">
+                <a class="right-footer-contents" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+                <a class="right-footer-contents" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+                <a class="right-footer-contents" href="#">Settings</a>
+
+            </div>
         <center>
         
-            <div class="bottom-section">
-            <a class="bottom-a" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a></p>
-            <div class="div-footer">
-       <div class="left-section-of-footer">
-                <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQkdQCCBI&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a>
-        <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQktQCCBM&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
-        <a class="bottom-a" href="https://google.com/search/howsearchworks/?fg=1">How Search works</a></li>
-       </div>
-    </div>
-
-
-<div class="new-div-footer-right"
-        <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a>
-        <a class="bottom-a" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiHl6i85LDwAhVFlKwKHRBGBiYQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a>
-        <a class="bottom-a" href="#">Settings</a>
-        
-    </div>
-</div>
+      
 </center>
    
     
     
     
-    
-    </footer>
+    </div>
+</div>
 
 
 
